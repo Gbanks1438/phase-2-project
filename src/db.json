@@ -1,0 +1,148 @@
+{
+    "classc_car_collection": [
+      {
+        "id": 1,
+        "make": "Jaguar",
+        "model": "XK-E",
+        "year": "1963",
+        "img_url": "src/Images/png-transparent-2017-jaguar-f-type-2008-jaguar-s-type-jaguar-e-type-car-jaguar-xkss-jaguar-animals-roadster-car.png",
+        "engine": "3.8L in-line 6",
+        "top_speed": "150 mph", 
+        "horsepower": "265hp",
+        "convertable": "Yes",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 2,
+        "make": "Mclaren",
+        "model": "F1",
+        "year": "1994",
+        "img_url": "",
+        "engine": "6.1L V12",
+        "top_speed": "240 mph", 
+        "horsepower": "627hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 3,
+        "make": "Mercedes",
+        "model": "300SL Gullwing Coupe",
+        "year": "1955",
+        "img_url": "",
+        "engine": "3L in-line 6",
+        "top_speed": "130 mph", 
+        "horsepower": "215hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 4,
+        "make": "Koenigsegg",
+        "model": "CCXR Trevita",
+        "year": "2010",
+        "img_url": "",
+        "engine": "4.8L twin-supercharged V8",
+        "top_speed": "254 mph", 
+        "horsepower": "806hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 5,
+        "make": "Mclaren",
+        "model": "P1",
+        "year": "2015",
+        "img_url": "",
+        "engine": "3.8L twin-turbocharged & 4.7 kWh electric motor",
+        "top_speed": "217 mph", 
+        "horsepower": "903hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 6,
+        "make": "Corvette",
+        "model": "Stingray Split-Window",
+        "year": "1963",
+        "img_url": "",
+        "engine": "5.3L V8",
+        "top_speed": "142 mph", 
+        "horsepower": "360hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 7,
+        "make": "Mercedes-Benz/Mclaren",
+        "model": "SLR",
+        "year": "2010",
+        "img_url": "",
+        "engine": "5.4L supercharged V8",
+        "top_speed": "200 mph", 
+        "horsepower": "617hp",
+        "convertable": "Yes",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 8,
+        "make": "Lamborghini",
+        "model": "Miura P400",
+        "year": "1967",
+        "img_url": "",
+        "engine": "3.9L transverse V12",
+        "top_speed": "172 mph", 
+        "horsepower": "350hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 9,
+        "make": "Ford",
+        "model": "GT",
+        "year": "2017",
+        "img_url": "",
+        "engine": "3.5L twin-turbocharged V6",
+        "top_speed": "216 mph", 
+        "horsepower": "647hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 10,
+        "make": "Fiat",
+        "model": "500",
+        "year": "1957",
+        "img_url": "",
+        "engine": "0.5L in-line 2",
+        "top_speed": "59 mph", 
+        "horsepower": "22hp",
+        "convertable": "No",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 11,
+        "make": "Buick",
+        "model": "Roadmaster",
+        "year": "1957",
+        "img_url": "",
+        "engine": "6L V8",
+        "top_speed": "110 mph", 
+        "horsepower": "300hp",
+        "convertable": "Yes",
+        "drive_train": "RWD"
+      },
+      {
+        "id": 12,
+        "make": "Chrysler",
+        "model": "Imperial Crown",
+        "year": "1958",
+        "img_url": "",
+        "engine": "6.4L V8",
+        "top_speed": "122 mph", 
+        "horsepower": "345hp",
+        "convertable": "Yes",
+        "drive_train": "RWD"
+      }
+    ]
+  }
