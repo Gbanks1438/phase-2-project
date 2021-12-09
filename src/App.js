@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import About from './Components/About';
 import CarList from './Components/CarList';
+import Form from './Components/Form';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Header />
     <About />
     <CarList />
+    <Form />
   </div>
   );
 }
