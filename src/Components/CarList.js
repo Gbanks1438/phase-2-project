@@ -18,10 +18,8 @@ function CarList() {
   }
 
   useEffect(fetchUrl, []);
-  
-  // fetchUrl()
 
-  console.log("Did useEffect work? ", listOfCarsArray)
+  // console.log("Did useEffect work? ", listOfCarsArray)
   
   return (
     <div>

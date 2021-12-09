@@ -21,7 +21,23 @@
   font-size: calc(10px + 2vmin);
 }
 
-.Insurance_button {
+.insurance_button {
   background-color: red;
   color: whitesmoke;
+}
+
+.card {
+  width:33%;
+}
+
+.container {
+  text-align: center;
+  /* display: block; */
+  width: auto;
+  height: auto;
+}
+
+.image {
+  width: auto;
+  height: auto;
 }

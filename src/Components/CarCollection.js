@@ -7,7 +7,7 @@ return (
     <div>
     {props.listOfCarsArray.map(
         (eachCar)=>{
-            // console.log("Did I get the cars? --> ", eachCar) //Yes we are good to go!
+            console.log("Did I get the cars? --> ", eachCar) //Yes we are good to go!
             return (
                 <VehicleCard 
                 key={eachCar.id} 
