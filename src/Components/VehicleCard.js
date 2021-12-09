@@ -1,3 +1,5 @@
+// {eachCar}, {insuranceButtonClicked}, {vehicleCardClicked}
+
 function VehicleCard(props) {
     return (
         <div className="container">
@@ -5,7 +7,10 @@ function VehicleCard(props) {
           <div
             className="card"
             key={props.eachCar.id}
-            onClick={() => console.log("A vehicle card was clicked!")}>
+            onClick={() => 
+            // console.log("A vehicle card was clicked!"),
+            props.vehicleCardClicked(props.eachCar)
+            }>
 
             <div className="image">
               <img alt={props.eachCar.make} src={props.eachCar.img_url}/>
@@ -40,7 +45,11 @@ function VehicleCard(props) {
 
           </div>
                 <div className="segment">
-                  <button className="insurance_button" onClick={() => console.log("Car was in an accident!")}>File Insurance Claim</button>
+                  <button className="insurance_button" 
+                  onClick={() => 
+                //   console.log("Car was in an accident!"),
+                  props.insuranceButtonClicked(props.eachCar)
+                  }>File Insurance Claim</button>
                 </div>
         </div>
       );
