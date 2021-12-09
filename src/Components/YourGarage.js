@@ -1,10 +1,29 @@
-//Display a card here only for the selected vehicles by clicking on the div of the vehicle card
+import VehicleCard from './VehicleCard'
 
-function Yourgarage() {
-    return(
+function YourGarage({carGarageArray, vehicleCardClicked, insuranceButtonClicked, removeCarFromGarage}) {
+    console.log(carGarageArray)
+
+    function removedFromGarage(eachCar) {
+        removeCarFromGarage(eachCar)
+    }
+
+    return (
     <div>
+        <h2>Your Garage</h2>
+        {
+        carGarageArray.map((eachCar)=>{
+            // console.log(car)
+          return <VehicleCard 
+          key={eachCar.id} 
+          eachCar={eachCar}
+          vehicleCardClicked={removedFromGarage}
+          />
+        })
+      }
     </div>
     )
 }
 
-export default Yourgarage;
+export default YourGarage;
+
+//Add POST somewhere here

@@ -1,25 +1,24 @@
-// {eachCar}, {insuranceButtonClicked}, {vehicleCardClicked}
-
-function VehicleCard(props) {
+function VehicleCard({eachCar, insuranceButtonClicked, vehicleCardClicked}) {
+    // console.log("What is props? ", props)
     return (
         <div className="container">
 
           <div
             className="card"
-            key={props.eachCar.id}
+            key={eachCar.id}
             onClick={() => 
             // console.log("A vehicle card was clicked!"),
-            props.vehicleCardClicked(props.eachCar)
+            vehicleCardClicked(eachCar)
             }>
 
             <div className="image">
-              <img alt={props.eachCar.make} src={props.eachCar.img_url}/>
+              <img alt={eachCar.make} src={eachCar.img_url}/>
             </div>
 
             <div className="content">
-                <p><strong>Year:</strong> {props.eachCar.year}</p>
-                <p><strong>Make:</strong> {props.eachCar.make}</p>
-                <p><strong>Model:</strong> {props.eachCar.model}</p>
+                <p><strong>Year:</strong> {eachCar.year}</p>
+                <p><strong>Make:</strong> {eachCar.make}</p>
+                <p><strong>Model:</strong> {eachCar.model}</p>
             </div>
 
               <div className="extra_content">
@@ -30,14 +29,14 @@ function VehicleCard(props) {
                                 <th>Horse Power</th>
                                 <th>Engine Type</th>
                                 <th>Drive Train</th>
-                                <th>convertable</th>
+                                <th>convertible</th>
                             </tr>
                             <tr>
-                                <td>{props.eachCar.top_speed}</td>
-                                <td>{props.eachCar.horsepower}</td>
-                                <td>{props.eachCar.engine}</td>
-                                <td>{props.eachCar.drive_train}</td>
-                                <td>{props.eachCar.convertable}</td>
+                                <td>{eachCar.top_speed}</td>
+                                <td>{eachCar.horsepower}</td>
+                                <td>{eachCar.engine}</td>
+                                <td>{eachCar.drive_train}</td>
+                                <td>{eachCar.convertable}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -48,7 +47,7 @@ function VehicleCard(props) {
                   <button className="insurance_button" 
                   onClick={() => 
                 //   console.log("Car was in an accident!"),
-                  props.insuranceButtonClicked(props.eachCar)
+                  insuranceButtonClicked(eachCar)
                   }>File Insurance Claim</button>
                 </div>
         </div>

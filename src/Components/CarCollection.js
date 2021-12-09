@@ -2,20 +2,21 @@ import VehicleCard from './VehicleCard';
 // import YourGarage from './YourGarage'
 // import DamagedCars from './DamagedCars'
 
-// {listOfCarsArray}, {insuranceButtonClicked}, {vehicleCardClicked}
-
-function CarCollection(props){
+ 
+function CarCollection({vehicleCardClicked, insuranceButtonClicked, listOfCarsArray}) {
+    // console.log("What it passed? ", insuranceButtonClicked)
 return (
     <div>
-    {props.listOfCarsArray.map(
+        <h2>Car Collection</h2>
+    {listOfCarsArray.map(
         (eachCar)=>{
-            console.log("Did I get the cars? --> ", eachCar) //Yes we are good to go!
+            // console.log("Did I get the cars? --> ", eachCar) //Yes we are good to go!
             return (
                 <VehicleCard 
                 key={eachCar.id}
                 eachCar={eachCar}
-                // props.insuranceButtonClicked={insuranceButtonClicked}
-                // props.vehicleCardClicked={vehicleCardClicked}
+                insuranceButtonClicked={insuranceButtonClicked}
+                vehicleCardClicked={vehicleCardClicked}
                 />
             )
         })}
