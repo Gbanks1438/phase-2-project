@@ -1,5 +1,4 @@
-// import { useEffect, useState } from 'react';
-// import VehicleCard from './VehicleCard';
+import VehicleCard from './VehicleCard';
 // import YourGarage from './YourGarage'
 // import DamagedCars from './DamagedCars'
 
@@ -8,9 +7,14 @@ return (
     <div>
     {props.listOfCarsArray.map(
         (eachCar)=>{
-            console.log("Did I get the cars? --> ", eachCar)
+            // console.log("Did I get the cars? --> ", eachCar) //Yes we are good to go!
+            return (
+                <VehicleCard 
+                key={eachCar.id} 
+                eachCar={eachCar}
+                />
+            )
         })}
-        {/* <VehicleCard listOfCarsArray={listOfCarsArray}/> */}
     </div>
 )
 }

@@ -1,4 +1,4 @@
-//Display cards here if marked as damaged
+//Display cards here if marked as damaged by clicking the 'File Insurance Claim' button
 
 function DamagedCars() {
     return(

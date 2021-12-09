@@ -1,52 +1,56 @@
-//styling for the card that holds each car goes here
-
 function VehicleCard(props) {
     return (
         <div className="ui column">
           <div
             className="ui card"
-            // key={bot.id}
-            // onClick={() => 
-            //   handleClick(bot)
-        //   }
+            key={props.eachCar.id}
+            onClick={() => 
+                console.log("A vehicle card was clicked!")
+          }
           >
             <div className="image">
-              <img alt="Yikes!" 
-            //   src={props.img_url} 
+              <img alt="Broken Link!" 
+              src={props.eachCar.img_url} 
               />
             </div>
             <div className="content">
               <div className="header">
-                {/* {props.make} */}
-                {/* <i className={botTypeClasses[bot.bot_class]} /> IDK what this would be */}
+                {props.eachCar.make}
               </div>
               <div className="meta text-wrap">
-                {/* <small>{bot.catchphrase}</small> */}
+                <small>{props.eachCar.model}</small>
               </div>
             </div>
             <div className="extra content">
               <span>
-                {/* <i className="icon heartbeat" />
-                {bot.health} */}
-              </span>
-    
-              <span>
-                {/* <i className="icon lightning" />
-                {bot.damage} */}
+                {props.eachCar.year}
               </span>
               <span>
-                {/* <i className="icon shield" />
-                {bot.armor} */}
+                {props.eachCar.engine}
               </span>
+              <span>
+                {props.eachCar.top_speed}
+              </span>
+              <span>
+                {props.eachCar.horsepower}
+              </span>
+              <span>
+                {props.eachCar.convertable}
+              </span>
+              <span>
+                {props.eachCar.drive_train}
+              </span>
+              
+
               <span>
                 <div className="ui center aligned segment basic">
                   <button
-                    className="ui mini red button"
-                    // onClick={() =>
-                    //  handleDeletionClick()
-                    // }
+                    className="Insurance_button"
+                    onClick={() =>
+                    console.log("Car was in an accident!")
+                    }
                   >
-                    x
+                    File Insurance Claim
                   </button>
                 </div>
               </span>

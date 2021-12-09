@@ -20,3 +20,8 @@
   color: whitesmoke;
   font-size: calc(10px + 2vmin);
 }
+
+.Insurance_button {
+  background-color: red;
+  color: whitesmoke;
+}
