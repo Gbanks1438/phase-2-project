@@ -34,40 +34,38 @@ function CarList() {
       }
       }
 
-  const removeCarFromGarage =(car)=>{  
+  const removeCarFromGarage =(eachCar)=>{  
         const removeCar = carGarageArray.filter(
           (oneCar)=>{
-            return car.id !== oneCar.id
+            return eachCar.id !== oneCar.id
           }
         )
         setCarGarageArray(removeCar)
       }
-      
+
 //STRETCH GOAL
-  // function insuranceButtonClicked(eachCar) {
-  //   let checkForDupes = listOfCarsArray.find(
-  //     (aVehicle)=>{return aVehicle.id === eachCar.id}
-  //   )
-  //   if (checkForDupes === undefined) {
-  //     setListOfCarsArray([...listOfCarsArray, eachCar])
-  //   // console.log(listOfCarsArray)
-  //   } else {
-  //     console.log("ERR!");
-  //   }
-  //   }
+  function insuranceButtonClicked(eachCar) {
+    fetch( baseURL + `/${eachCar.id}`, 
+    { method: "DELETE" })
+    removeCarFromGarage(eachCar)
+    const filteredCarCollection = carGarageArray.filter((aVehicle) => {
+      return eachCar.id !== aVehicle.id
+    }
+    )
+    setCarGarageArray(filteredCarCollection);
+    }
 
   return (
     <div>
       <CarCollection 
         listOfCarsArray={listOfCarsArray}
-        // insuranceButtonClicked={insuranceButtonClicked}
+        insuranceButtonClicked={insuranceButtonClicked}
         vehicleCardClicked={vehicleCardClicked}
       />
       <YourGarage 
         carGarageArray={carGarageArray}
         vehicleCardClicked={vehicleCardClicked}
         removeCarFromGarage={removeCarFromGarage}
-        // insuranceButtonClicked={insuranceButtonClicked}
       />
       </div>
   )

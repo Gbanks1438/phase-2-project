@@ -1,4 +1,5 @@
 import VehicleCard from './VehicleCard'
+
 // { vehicleCardClicked, insuranceButtonClicked } //Other destructured props NOT currently in use
 function YourGarage({carGarageArray, removeCarFromGarage }) {
     console.log(carGarageArray)
@@ -12,7 +13,6 @@ function YourGarage({carGarageArray, removeCarFromGarage }) {
             <h2>Your Garage</h2>
         {
         carGarageArray.map((eachCar)=>{
-            // console.log(car)
           return <VehicleCard 
           key={eachCar.id} 
           eachCar={eachCar}

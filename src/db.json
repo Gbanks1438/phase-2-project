@@ -143,18 +143,6 @@
       "horsepower": "345 hp",
       "convertable": "Yes",
       "drive_train": "RWD"
-    },
-    {
-      "make": "Ford",
-      "model": "F-150",
-      "year": "2021",
-      "img_url": "https://static.foxdealer.com/681/2021/10/VDP-Carousel-Image.jpg",
-      "engine": "5.0L V8",
-      "top_speed": "120",
-      "horsepower": "400",
-      "convertable": "",
-      "drive_train": "4x4",
-      "id": 13
     }
   ]
 }

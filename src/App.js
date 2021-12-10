@@ -1,4 +1,4 @@
-// import React from "react";
+import { Route, Routes } from "react-router-dom"; //Navigate
 import './App.css';
 import Header from './Components/Header';
 import About from './Components/About';
@@ -11,9 +11,16 @@ function App() {
   return (
     <div className="App">
     <Header />
-    <About />
-    <CarList />
-    <Form />
+
+<Routes>
+    {/* <Route path='/' element={<Navigate replace to="/about" />} /> */}
+    <Route path='/about' element={<About />} />
+   
+    <Route path='/carlist' element={<CarList />} />
+ 
+    <Route path='/form' element={<Form />} />
+        
+</Routes>
   </div>
   );
 }

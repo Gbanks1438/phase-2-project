@@ -69,6 +69,7 @@ return (
                     value={engine}
                     onChange={(e) => setEngine(e.target.value)}
                     />
+                    <br/>
                 <label>Top Speed:</label>
                 <input
                     type="text"
@@ -96,7 +97,7 @@ return (
                     value={drive_train}
                     onChange={(e) => setDrive_train(e.target.value)}
                     >
-                      <option value="FWD">FWD</option>
+                        <option value="FWD">FWD</option>
                         <option value="RWD">RWD</option>
                         <option value="AWD">AWD</option>
                         <option value="4x4">4x4</option>
