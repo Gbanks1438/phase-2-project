@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import CarCollection from './CarCollection';
 import YourGarage from './YourGarage';
-// import DamagedCars from './DamagedCars';
 
 function CarList() {
 
@@ -9,7 +8,6 @@ function CarList() {
   
   const [listOfCarsArray, setListOfCarsArray] = useState([]);
   const [carGarageArray, setCarGarageArray] = useState([]);
-  // const [damagedCarArray, setDamagedCarArray] = useState([]);
   
   function fetchUrl() {
     fetch(baseURL)
@@ -43,7 +41,6 @@ function CarList() {
         setCarGarageArray(removeCar)
       }
 
-//STRETCH GOAL
   function insuranceButtonClicked(eachCar) {
     fetch( baseURL + `/${eachCar.id}`, 
     { method: "DELETE" })

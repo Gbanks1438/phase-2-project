@@ -1,11 +1,20 @@
-.About-text {
-  text-align: center;
-  font-size: calc(10px + 2vmin);
-  color: #384138;
+/* html {
+  scroll-behavior: smooth;
+} */
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  /* transition: all ease-out 250ms; */
+  padding: 30px;
+}
+
+li {
+  display: inline;
 }
 
 .App-header {
-  background-color: silver;
+  background-color: #D8D0C2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,15 +24,16 @@
   font-size: calc(10px + 2vmin);
 }
 
-.Button {
-  background-color: red;
-  color: whitesmoke;
+.About-text {
+  text-align: center;
   font-size: calc(10px + 2vmin);
-}
-
-.insurance_button {
-  background-color: red;
-  color: whitesmoke;
+  color: black;
+  background-image: url("https://media.istockphoto.com/photos/california-desert-road-picture-id1170940813?b=1&k=20&m=1170940813&s=170667a&w=0&h=qTihpyVZt9K3AV4oMC8l98odtnCe4TyrzitytycDeME=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  line-height: 160%;
+  text-shadow: 0 0 3px #FF0000;
 }
 
 .card {
@@ -32,12 +42,43 @@
 
 .container {
   text-align: center;
-  /* display: block; */
   width: auto;
   height: auto;
+}
+
+.insurance_button {
+  background-color: red;
+  color: whitesmoke;
+}
+
+.car-collection {
+  background-color: lightgray;
+}
+
+.garage {
+  background-color: #8D918D;
 }
 
 .image {
   width: auto;
   height: auto;
+}
+
+h2 {
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 3px #FF0000;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+a:hover {
+  color: rgb(226, 15, 219);
+}
+
+a:active {
+  color: #1F51FF;
 }

@@ -13,7 +13,7 @@ const CreateNewVehicle = () => {
     const [isPending, setIsPending] = useState(false);
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         const vehicle = { make, model, year, img_url, engine, top_speed, horsepower, convertable, drive_train };
 
         setIsPending(true);

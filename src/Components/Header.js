@@ -4,7 +4,9 @@ function Header() {
     return (
     <header className="App-header">
         <nav>
-            <ul>
+            <ul><li>
+                    <NavLink to='/'>Home</NavLink>
+                </li>
                 <li>
                     <NavLink to='/about'>About</NavLink>
                 </li>
