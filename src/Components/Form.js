@@ -62,6 +62,7 @@ return (
                     value={img_url}
                     onChange={(e) => setImg_url(e.target.value)}
                     />
+                    <br/><br/>
                 <label>Engine Type:</label>
                 <input
                     type="text"
@@ -69,7 +70,6 @@ return (
                     value={engine}
                     onChange={(e) => setEngine(e.target.value)}
                     />
-                    <br/>
                 <label>Top Speed:</label>
                 <input
                     type="text"
@@ -106,6 +106,7 @@ return (
                     { isPending &&<button disabled>Adding car...</button>}
             </form>
         </div>
+        <br/><br/>
 </div>
         );
      }
