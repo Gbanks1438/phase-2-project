@@ -30,7 +30,6 @@ const CreateNewVehicle = () => {
 
 return (
 <div className="container">
-    <h2>Your Garage</h2>
         <div className="create">
             <h3>Add a new car</h3>
             <form onSubmit={handleSubmit}>
