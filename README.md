@@ -1,3 +1,8 @@
+Project description:
+This project was a learning experience to make a functional SPA. It was bootstrapped from the Create React App. I just Javacript and React for the functionality with HTML and CSS for the layout and design. The project idea was to consider some of the cars that one may find at Kay Leno's Garage in California and allow a user to click a vehicle card to move it to a section of the screen that represented it as being rented. When a card is moved over it is not able to be rented to another user, so duplicates are accounted for using Javascript and arrays. There is a button to click to represent if the vehicle was in an accident, so the card is removed. By clicking a vehicle card that had been reserved, it returns it to the garage of all vehicles. As this is a learning experience, there was no back-end and no need to make a faker transactional section for payments. This app is not hosted on Heroku.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
